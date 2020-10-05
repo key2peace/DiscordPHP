@@ -26,19 +26,17 @@ use Discord\Parts\User\User;
  *
  * @property Member                       $member The member that the presence update affects.
  * @property User                         $user The user that the presence update affects.
- * @property Collection|Role[]            $roles The roles that the user has.
  * @property Guild                        $guild The guild that the presence update affects.
  * @property string                       $guild_id The unique identifier of the guild that the presence update affects.
  * @property string                       $status The updated status of the user.
  * @property Activity                     $game The updated game of the user.
- * @property Carbon                       $premium_since Time since user started boosting guild.
  */
 class PresenceUpdate extends Part
 {
     /**
      * {@inheritdoc}
      */
-    protected $fillable = ['user', 'roles', 'game', 'guild_id', 'status', 'activities', 'client_status', 'premium_since', 'nick'];
+    protected $fillable = ['user', 'game', 'guild_id', 'status', 'activities', 'client_status'];
 
     /**
      * Gets the member attribute.
@@ -70,26 +68,6 @@ class PresenceUpdate extends Part
     }
 
     /**
-     * Returns the users roles.
-     *
-     * @return Collection|Role[]
-     */
-    protected function getRolesAttribute(): Collection
-    {
-        $roles = new Collection();
-
-        if (! $this->guild) {
-            $roles->fill($this->attributes['roles']);
-        } else {
-            foreach ($this->attributes['roles'] as $role) {
-                $roles->push($this->guild->roles->get('id', $role));
-            }
-        }
-
-        return $roles;
-    }
-
-    /**
      * Gets the guild attribute.
      *
      * @return Guild The guild that the user was in.
@@ -111,19 +89,5 @@ class PresenceUpdate extends Part
         }
 
         return $this->factory->create(Activity::class, (array) $this->attributes['game'], true);
-    }
-
-    /**
-     * Gets the premium since timestamp.
-     *
-     * @return Carbon|null
-     */
-    protected function getPremiumSinceAttribute(): ?Carbon
-    {
-        if (! isset($this->attributes['premium_since'])) {
-            return null;
-        }
-
-        return Carbon::parse($this->attributes['premium_since']);
     }
 }
