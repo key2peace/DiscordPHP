@@ -282,13 +282,9 @@ class Member extends Part
      * @return Activity
      * @throws \Exception
      */
-    protected function getGameAttribute(): Part
+    protected function getGameAttribute(): ?Activity
     {
-        if (! array_key_exists('game', $this->attributes)) {
-            $this->attributes['game'] = [];
-        }
-
-        return $this->factory->create(Activity::class, (array) $this->attributes['game'], true);
+        return $this->activities->first();
     }
 
     /**
