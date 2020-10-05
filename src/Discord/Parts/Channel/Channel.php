@@ -265,9 +265,9 @@ class Channel extends Part
         $deferred = new Deferred();
 
         if ($part instanceof Member) {
-            $type = 'member';
+            $type = Overwrite::TYPE_MEMBER;
         } elseif ($part instanceof Role) {
-            $type = 'role';
+            $type = Overwrite::TYPE_ROLE;
         } else {
             return Reject(new InvalidOverwriteException('Given part was not one of member or role.'));
         }
