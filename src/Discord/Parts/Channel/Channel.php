@@ -484,7 +484,7 @@ class Channel extends Part
             }
 
             $this->http->post(
-                "channels/{$this->id}/messages/bulk_delete",
+                "channels/{$this->id}/messages/bulk-delete",
                 [
                     'messages' => $messageID,
                 ]
