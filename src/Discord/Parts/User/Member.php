@@ -92,7 +92,7 @@ class Member extends Part
         $url = $this->replaceWithVariables('guilds/:guild_id/bans/:id');
 
         if (! is_null($daysToDeleteMessasges)) {
-            $content['delete-message-days'] = $daysToDeleteMessasges;
+            $content['delete_message_days'] = $daysToDeleteMessasges;
         }
 
         $this->http->put($url, $content)->then(
