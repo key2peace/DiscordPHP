@@ -1240,6 +1240,8 @@ class Discord
 
                 $options['intents'] = $intentVal;
             }
+        } else {
+            $options['intents'] = Intents::getAllIntents();
         }
 
         return $options;
