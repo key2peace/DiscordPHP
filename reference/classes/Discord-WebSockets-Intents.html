@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                                <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/discord.html"><abbr title="\Discord">Discord</abbr></a></h4>
+                <ul class="phpdocumentor-list">
+                                            <li><a href="namespaces/discord-commandclient.html"><abbr title="\Discord\CommandClient">CommandClient</abbr></a></li>
+                                            <li><a href="namespaces/discord-exceptions.html"><abbr title="\Discord\Exceptions">Exceptions</abbr></a></li>
+                                            <li><a href="namespaces/discord-factory.html"><abbr title="\Discord\Factory">Factory</abbr></a></li>
+                                            <li><a href="namespaces/discord-helpers.html"><abbr title="\Discord\Helpers">Helpers</abbr></a></li>
+                                            <li><a href="namespaces/discord-http.html"><abbr title="\Discord\Http">Http</abbr></a></li>
+                                            <li><a href="namespaces/discord-parts.html"><abbr title="\Discord\Parts">Parts</abbr></a></li>
+                                            <li><a href="namespaces/discord-repository.html"><abbr title="\Discord\Repository">Repository</abbr></a></li>
+                                            <li><a href="namespaces/discord-voice.html"><abbr title="\Discord\Voice">Voice</abbr></a></li>
+                                            <li><a href="namespaces/discord-websockets.html"><abbr title="\Discord\WebSockets">WebSockets</abbr></a></li>
+                                    </ul>
+                        </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/discord.html">Discord</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/discord-websockets.html">WebSockets</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    Intents
+
+    
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">14</span>
+</aside>
+
+        
+
+
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_DIRECT_MESSAGE_REACTIONS">DIRECT_MESSAGE_REACTIONS</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 13                    </span>
+</dt>
+<dd>Direct message reaction events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_DIRECT_MESSAGE_TYPING">DIRECT_MESSAGE_TYPING</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 14                    </span>
+</dt>
+<dd>Direct message typing events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_DIRECT_MESSAGES">DIRECT_MESSAGES</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 12                    </span>
+</dt>
+<dd>Direct message events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_BANS">GUILD_BANS</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 2                    </span>
+</dt>
+<dd>Guild ban events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_EMOJIS">GUILD_EMOJIS</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 3                    </span>
+</dt>
+<dd>Guild emoji events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_INTEGRATIONS">GUILD_INTEGRATIONS</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 4                    </span>
+</dt>
+<dd>Guild integration events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_INVITES">GUILD_INVITES</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 6                    </span>
+</dt>
+<dd>Guild invite events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_MEMBERS">GUILD_MEMBERS</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 1                    </span>
+</dt>
+<dd>Guild member events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_MESSAGE_REACTIONS">GUILD_MESSAGE_REACTIONS</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 10                    </span>
+</dt>
+<dd>Guild message reaction events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_MESSAGE_TYPING">GUILD_MESSAGE_TYPING</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 11                    </span>
+</dt>
+<dd>Guild typing events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_MESSAGES">GUILD_MESSAGES</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 9                    </span>
+</dt>
+<dd>Guild message events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_PRESENCES">GUILD_PRESENCES</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 8                    </span>
+</dt>
+<dd>Guild presence events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_VOICE_STATES">GUILD_VOICE_STATES</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 7                    </span>
+</dt>
+<dd>Guild voice state events:.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_WEBHOOKS">GUILD_WEBHOOKS</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 5                    </span>
+</dt>
+<dd>Guild webhook events.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/Discord-WebSockets-Intents.html#constant_GUILDS">GUILDS</a>
+    <span>
+        &nbsp;= 1 &lt;&lt; 0                    </span>
+</dt>
+<dd>Guilds intent:.</dd>
+
+                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Discord-WebSockets-Intents.html#method_getAllIntents">getAllIntents()</a>
+    <span>
+                        &nbsp;: int    </span>
+</dt>
+<dd>Returns an integer value that represents all intents.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Discord-WebSockets-Intents.html#method_getValidIntents">getValidIntents()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Returns an array of valid intents.</dd>
+
+        </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Discord-WebSockets-Intents.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DIRECT_MESSAGE_REACTIONS">
+        DIRECT_MESSAGE_REACTIONS
+        <a href="classes/Discord-WebSockets-Intents.html#constant_DIRECT_MESSAGE_REACTIONS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">138</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Direct message reaction events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DIRECT_MESSAGE_REACTIONS</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 13</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>MESSAGE_REACTION_ADD</li>
+<li>MESSAGE_REACTION_REMOVE</li>
+<li>MESSAGE_REACTION_REMOVE_ALL</li>
+<li>MESSAGE_REACTION_REMOVE_EMOJI</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DIRECT_MESSAGE_TYPING">
+        DIRECT_MESSAGE_TYPING
+        <a href="classes/Discord-WebSockets-Intents.html#constant_DIRECT_MESSAGE_TYPING" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">145</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Direct message typing events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DIRECT_MESSAGE_TYPING</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 14</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>TYPING_START</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DIRECT_MESSAGES">
+        DIRECT_MESSAGES
+        <a href="classes/Discord-WebSockets-Intents.html#constant_DIRECT_MESSAGES" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Direct message events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DIRECT_MESSAGES</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 12</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>CHANNEL_CREATE</li>
+<li>MESSAGE_CREATE</li>
+<li>MESSAGE_UPDATE</li>
+<li>MESSAGE_DELETE</li>
+<li>CHANNEL_PINS_UPDATE</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_BANS">
+        GUILD_BANS
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_BANS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild ban events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_BANS</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 2</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>GUILD_BAN_ADD</li>
+<li>GUILD_BAN_REMOVE</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_EMOJIS">
+        GUILD_EMOJIS
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_EMOJIS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">54</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild emoji events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_EMOJIS</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 3</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>GUILD_EMOJIS_UPDATE</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_INTEGRATIONS">
+        GUILD_INTEGRATIONS
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_INTEGRATIONS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild integration events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_INTEGRATIONS</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 4</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>GUILD_INTEGRATIONS_UPDATE</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_INVITES">
+        GUILD_INVITES
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_INVITES" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild invite events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_INVITES</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 6</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>INVITE_CREATE</li>
+<li>INVITE_DELETE</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_MEMBERS">
+        GUILD_MEMBERS
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_MEMBERS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild member events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_MEMBERS</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 1</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>GUILD_MEMBER_ADD</li>
+<li>GUILD_MEMBER_UPDATE</li>
+<li>GUILD_MEMBER_REMOVE</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_MESSAGE_REACTIONS">
+        GUILD_MESSAGE_REACTIONS
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_MESSAGE_REACTIONS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild message reaction events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_MESSAGE_REACTIONS</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 10</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>MESSAGE_REACTION_ADD</li>
+<li>MESSAGE_REACTION_REMOVE</li>
+<li>MESSAGE_REACTION_REMOVE_ALL</li>
+<li>MESSAGE_REACTION_REMOVE_EMOJI</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_MESSAGE_TYPING">
+        GUILD_MESSAGE_TYPING
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_MESSAGE_TYPING" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">117</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild typing events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_MESSAGE_TYPING</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 11</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>TYPING_START</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_MESSAGES">
+        GUILD_MESSAGES
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_MESSAGES" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild message events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_MESSAGES</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 9</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>MESSAGE_CREATE</li>
+<li>MESSAGE_UPDATE</li>
+<li>MESSAGE_DELETE</li>
+<li>MESSAGE_DELETE_BULK</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_PRESENCES">
+        GUILD_PRESENCES
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_PRESENCES" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">90</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild presence events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_PRESENCES</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 8</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>PRESENECE_UPDATE</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_VOICE_STATES">
+        GUILD_VOICE_STATES
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_VOICE_STATES" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild voice state events:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_VOICE_STATES</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 7</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>VOICE_STATE_UPDATE</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILD_WEBHOOKS">
+        GUILD_WEBHOOKS
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILD_WEBHOOKS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guild webhook events.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILD_WEBHOOKS</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 5</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>WEBHOOKS_UPDATE</li>
+</ul>
+</section>
+
+    
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUILDS">
+        GUILDS
+        <a href="classes/Discord-WebSockets-Intents.html#constant_GUILDS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">30</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Guilds intent:.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+    <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUILDS</span>
+    = <span class="phpdocumentor-signature__default-value">1 &lt;&lt; 0</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><ul>
+<li>GUILD_CREATE</li>
+<li>GUILD_UPDATE</li>
+<li>GUILD_DELETE</li>
+<li>GUILD_ROLE_CREATE</li>
+<li>GUILD_ROLE_UPDATE</li>
+<li>GUILD_ROLE_DELETE</li>
+<li>CHANNEL_CREATE</li>
+<li>CHANNEL_UPDATE</li>
+<li>CHANNEL_DELETE</li>
+<li>CHANNEL_PINS_UPDATE</li>
+</ul>
+</section>
+
+    
+
+</article>
+            </section>
+
+        
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Discord-WebSockets-Intents.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getAllIntents">
+        getAllIntents()
+        <a href="classes/Discord-WebSockets-Intents.html#method_getAllIntents" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">164</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns an integer value that represents all intents.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getAllIntents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">int</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getValidIntents">
+        getValidIntents()
+        <a href="classes/Discord-WebSockets-Intents.html#method_getValidIntents" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Discord/WebSockets/Intents.php"><a href="files/src-discord-websockets-intents.html"><abbr title="src/Discord/WebSockets/Intents.php">Intents.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">152</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Returns an array of valid intents.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">getValidIntents</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="classes/Discord-WebSockets-Intents.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>
