@@ -125,7 +125,7 @@ class Member extends Part
      *
      * @return ExtendedPromiseInterface<Ban>
      */
-    public function ban(?int $daysToDeleteMessages = null, ?string $reason = null): ExtendedPromiseInterface
+    public function ban(?int $daysToDeleteMessages = 0, ?string $reason = null): ExtendedPromiseInterface
     {
         if (! $guild = $this->guild) {
             return reject(new \RuntimeException('Member has no Guild Part'));
